@@ -1,0 +1,13 @@
+<template >
+    <div class="slds-card slds-var-p-around_large">
+        <div class="slds-grid">
+            <p class="slds-col">
+               Loan Amount
+            </p>
+            <lightning-input type="number" value={val} label="Amount" class="slds-border_bottom"></lightning-input>        
+        </div>
+         <div class="slds-slider">
+         <input type="range"  onchange={changeValue} class="slds-slider__range slds-var-m-vertical_large" value={val} />        
+         </div>                
+    </div>
+ </template>
